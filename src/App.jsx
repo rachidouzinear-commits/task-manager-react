@@ -1,11 +1,11 @@
-function App() {
+import Layout from "./components/layout/Layout";
+ function App() {
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-white">
-        Task Manager 🚀
-      </h1>
-    </div>
+    <Layout>
+      <h2 className="text-3xl font-bold">
+        welcome 👋
+      </h2>
+    </Layout>
   );
-}
-
+ }
 export default App;

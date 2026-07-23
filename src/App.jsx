@@ -1,11 +1,22 @@
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
- function App() {
-  return (
+
+import Dashboard from "./pages/Dashboard";
+import Tasks from "./pages/Tasks";
+import Completed from "./pages/Completed";
+import Settings from "./pages/Settings";
+
+function App() {
+  return(
     <Layout>
-      <h2 className="text-3xl font-bold">
-        welcome 👋
-      </h2>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/tasks" element={<Tasks />} />
+        <Route path="/completed" element={<Completed />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
     </Layout>
   );
- }
+}
+
 export default App;
